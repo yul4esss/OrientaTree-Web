@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #6b816a !important;
+    box-shadow: 0 0 10px rgba(99, 148, 79, 0.1);
+    color: #fff;
+}
+
+.header {
+    background-color: #8fae92 !important;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.activity-name, .set-map-points, .program-button, .password-button, .start-button, .date-time input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #8fae92 !important;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.activity-name {
+    padding: 5px;
+    background-color: #8fae92 !important;
+    border: none;
+    color: white;
+    text-align: left;
+}
+
+.activity-name::placeholder {
+    color: rgb(223, 223, 223) !important;
+}
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-time input {
+    width: 30%;
+}
+
+/* Set the color of the icons to white */
+.date-time input[type="time"]::-webkit-calendar-picker-indicator,
+.date-time input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* Mozilla Firefox */
+.date-time input[type="time"]::-moz-focus-inner,
+.date-time input[type="time"]::-moz-focus-outer,
+.date-time input[type="date"]::-moz-focus-inner,
+.date-time input[type="date"]::-moz-focus-outer {
+    filter: invert(1);
+}
+
+/* Microsoft Edge */
+.date-time input[type="time"]::-ms-expand,
+.date-time input[type="date"]::-ms-expand {
+    filter: invert(1);
+}
+
+/* Ensure the color of the icons inside the input fields */
+.date-time input[type="time"],
+.date-time input[type="date"] {
+    color: white;
+}
+
+.modality div, .help-location .form-check {
+    display: flex;
+    align-items: center;
+}
+
+.modality input[type="radio"]:checked + label::before {
+    background-color: white;
+}
+
+.help-location .form-check-input:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.help-location .form-check-input {
+    margin-right: 10px;
+}
+
+.activity-details, .description {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.program-button:hover {
+    background-color: #8fae92 !important;
+}
+
+.frame {
+    padding: 20px;
+    background-color: rgba(143, 174, 146, 0.5) !important;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure any overflow content is hidden */
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#password-input {
+    flex-grow: 1;
+    padding-right: 50px; /* Add some padding to make room for the button */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #8fae92 !important;
+}

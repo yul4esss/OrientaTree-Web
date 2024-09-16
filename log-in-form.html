@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/Tree Icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/log-in-styles.css" />
+    <title>OrientaTree</title>
+  </head>
+  <body class="custom-bg">
+    <form action="#" id="logInForm">
+      <div class="log-in-form">
+        <img class="form-logo" src="img/Tree Icon.png" alt="Logo" />
+        <p id="form-logo-caption">OrientaTree</p>
+        <div class="form-header">LOGIN</div>
+        <div class="log-in-inputs">
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="E-mail"
+            required
+          />
+          <div class="user-pass">
+            <input
+              type="password"
+              name="userPassword"
+              id="userPassword"
+              placeholder="Password"
+              required
+            />
+            <img src="img/eye-close.png" id="show-psw-icon" />
+          </div>
+        </div>
+        <div class="log-in-recover-pass"><a href="#">Forgot password?</a></div>
+        <div class="log-in-form-btn">
+          <button class="log-in-btn" id="submit" type="submit">Login</button>
+          <a href="registration-form.html" class="register-btn">Register</a>
+        </div>
+      </div>
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+    <script type="module" src="js/database-connection.js"></script>
+    <script type="module" src="js/log-in-form.js"></script>
+  </body>
+</html>

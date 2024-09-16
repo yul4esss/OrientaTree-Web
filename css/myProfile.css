@@ -1,0 +1,143 @@
+/* myProfile.css */
+
+body {
+    font-family:"Jost", sans-serif;
+    background-color: #647862;
+}
+
+.navbar {
+    background-color: transparent !important; 
+    
+}
+
+.navbar-brand {
+    font-weight: bold;
+    position: relative;
+    color: #ffffff !important; /* Ensure text color remains white */
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+
+}
+
+.navbar-brand::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after {
+    width: 100%; 
+    color: #ffffff;
+}
+
+
+.navbar-brand:hover {
+    color: #ffffff; /* Change text color on hover */
+}
+.navbar.active .navbar-brand::after {
+    width: 100%; /* Expand the width of the line when the navbar is active */
+}
+
+.navbar-brand.active::after {
+    width: 100%; /* Expand the width of the line when the navbar item is active */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    color: #E7F0E6;
+}
+
+.profile-header img {
+    width: 20px; 
+    margin-right: 10px; 
+}
+
+/* Profile name */
+.profile-name {
+    display: flex;
+    justify-content: center; 
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    font-weight: bold; 
+    font-size: 32px; 
+}
+
+/* Profile email */
+.profile-email {
+    display: flex;
+    justify-content: center; 
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+  
+    font-size: 24px; 
+}
+
+/* Full width line */
+.full-width-line {
+    width: 100%; 
+    border: none; 
+    border-top: 3px solid #FFFFFF;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: left; 
+    font-family: "Jost", sans-serif;
+    font-weight:bold;
+    font-size: 24px;
+    color: #e6e9e6;
+    margin-left: 35px; 
+}
+
+.profile-actions-text{
+
+    justify-content: left; 
+    font-family: "Jost", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 5px; 
+}
+
+.prof {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+
+.profile-session {
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #e6e9e6;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.signout {
+    text-align: center;
+    color: #FFFFFF !important; /* Ensure text color is white */
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    opacity: 80%;
+    font-size: 24px;
+}
+.signout a {
+    color: #FFFFFF !important; /* Ensure text color is white */
+    text-decoration: none; /* Remove underline from the link */
+}
+

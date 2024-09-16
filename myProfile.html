@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/myProfile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/myProfile.js"></script>
+
+    <title>OrientaTree</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#" onclick="highlightNavItem(this)">
+        <img src="img/arrow.png"30" height="30" class="d-inline-block align-top"
+        alt=""> My profile
+      </a>
+    </nav>
+
+    <img
+      src="img/profilepicture.jpg"
+      alt="Profile Picture"
+      class="profile-picture"
+    />
+
+    <div class="profile-name">Name</div>
+    <div class="profile-email">email@gmail.com</div>
+
+    <hr class="full-width-line" />
+    <!-- Horizontal rule with full width -->
+
+    <div class="profile-actions">Actions</div>
+
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#" onclick="highlightNavItem(this)">
+        <img src="img/home.svg"25" height="20" class="profile-actions-text"
+        alt=""> My profile
+      </a>
+    </nav>
+
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#" onclick="highlightNavItem(this)">
+        <img src="img/map.png"25" height="20" class="profile-actions-text"
+        alt=""> Organise activity
+      </a>
+    </nav>
+
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#" onclick="highlightNavItem(this)">
+        <img src="img/config.png"25" height="20" class="profile-actions-text"
+        alt=""> Configuration
+      </a>
+    </nav>
+
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#" onclick="highlightNavItem(this)">
+        <img src="img/bars.png"25" height="20" class="profile-actions-text"
+        alt=""> Credits
+      </a>
+    </nav>
+
+    <hr class="full-width-line" />
+    <!-- Horizontal rule with full width -->
+
+    <div class="profile-session">Session</div>
+
+    <div class="signout">
+      <a href="#">
+        <img src ="img/signout.png"25" height="20" class="profile-actions-text"
+        alt=""> Sign out</a
+      >
+    </div>
+  </body>
+</html>

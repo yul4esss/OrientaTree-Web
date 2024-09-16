@@ -1,0 +1,194 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+body {
+    background-color: #647862;
+}
+
+.page-header img {
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+}
+
+.page-header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+  }
+
+h1 {
+	font-family: "Jost", sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: 700;
+	transform: translateY(7%);
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+/*Map styling*/
+#map {
+    margin-top: 20px;
+    height: 75%;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+
+.custom-div-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.number {
+    background-color: #53a65f;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.start-point-icon .start-point {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 25px solid rgb(235, 29, 132); /* Color of the triangle */
+    border-top: 10px solid transparent;
+}
+
+.custom-div-icon .number {
+    width: 30px;
+    height: 30px;
+    background: rgb(99, 143, 93);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.map-control-btn {
+  background-color: #8da08b;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #e7f0e6;
+  border-radius: 7px;
+  border: 0 solid;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0);
+  outline: 2px solid;
+  outline-color: #8da08b;
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+
+#map-controls .btn + .btn {
+  margin-left: 10px;
+}
+
+.map-control-btn:hover {
+  border: 1px solid;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 5px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+#deleteMarkers.map-control-btn {
+  background-color: #dc3545;
+}
+
+#connectMarkers.map-control-btn,
+#setStartPoint.map-control-btn {
+  background-color: #28a745; /* Color for connecting beacons */
+}
+
+
+@media (max-width: 768px) {
+  #map-controls .btn + .btn {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  #map-controls .btn {
+    font-size: 16px;
+  }
+}
+
+
+

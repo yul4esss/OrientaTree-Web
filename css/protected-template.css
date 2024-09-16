@@ -1,0 +1,75 @@
+.password-modal {
+    display: none; /* Hide the modal by default */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .password-modal-content {
+    background-color: white;
+    border: 5px solid #61483E;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    color: #61483E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .password-modal-content h2 {
+    color: #61483E;
+    margin: 0;
+  }
+  
+  .password-modal-content p {
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .password-modal-content input[type=password] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: left;
+    outline: none;
+  }
+  
+  .password-modal-content input[type=password]:focus {
+    border-bottom-color: black;
+  }
+  
+  .button-container {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .password-modal-content button {
+    background-color: #8DA08B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  .password-modal-content button:hover {
+    background-color: #515F4F;
+  }

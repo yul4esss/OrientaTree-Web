@@ -1,0 +1,175 @@
+
+body {
+    font-family:"Jost", sans-serif;
+    background-color: #647862;
+}
+
+.navbar {
+    background-color: transparent !important; 
+    
+}
+
+.navbar-brand {
+    font-weight: bold;
+    position: relative;
+    color: #ffffff !important; /* Ensuring text color remains white */
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+
+}
+
+
+.navbar-brand::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease; /* Smooth transition for line width change */
+}
+
+.navbar-brand:hover::after {
+    width: 100%; 
+    color: #ffffff;/* Expand the width of the line on hover */
+}
+
+
+.navbar-brand:hover {
+    color: #ffffff; /* Change text color on hover */
+}
+.navbar.active .navbar-brand::after {
+    width: 100%; /* Expand the width of the line when the navbar is active */
+}
+
+.navbar-brand.active::after {
+    width: 100%; /* Expand the width of the line when the navbar item is active */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    color: #E7F0E6;
+}
+
+.profile-header img {
+    width: 20px; 
+    margin-right: 10px; 
+}
+
+/* Profile name */
+.configuration-name {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the text horizontally */
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    font-weight: bold; 
+    font-size: 24px;
+    text-decoration: none; /* Remove underline */
+}
+
+
+.configuration-name:hover {
+    color: #FFFFFF; /* Set text color to white on hover */
+}
+
+.configuration-name:visited {
+    color: #FFFFFF; /* Set text color to white for visited links */
+}
+
+.configuration-name img {
+    margin-left: 10px; /* Adjust the margin to control the spacing between text and image */
+    vertical-align: middle; /* Align the image vertically in the middle with the text */
+}
+
+
+
+/* email */
+.configuration-email {
+    display: flex;
+    justify-content: center; 
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    font-weight: 150; 
+    font-size: 24px; 
+}
+
+/* Full width line */
+.full-width-line {
+    width: 100%; 
+    border: none; 
+    border-top: 3px solid #FFFFFF;
+}
+
+.configuration-username{
+    display: flex;
+    justify-content: left; 
+    font-family: "Jost", sans-serif;
+    font-weight:bold;
+    font-size: 24px;
+    color: #e6e9e6;
+    margin-left: 35px; 
+}
+
+.configuration-text{
+    text-align:center;
+    font-family: "Jost", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 5px; 
+}
+
+.prof {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+
+.custom-form {
+    width: 50%;
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: transparent; /* Clear background color */
+    color: #FFFFFF; 
+}
+
+.custom-form label {
+    font-weight: bold; 
+}
+
+.custom-form .form-control {
+    background-color: transparent; 
+    color: #FFFFFF;
+    border-color: #e3e6e1; 
+    border-width: 3px;
+}
+.custom-form .form-control::placeholder {
+    color: #FFFFFF; 
+}
+.custom-form-button {
+    width: 50%; 
+    margin: 0 auto; 
+    background-color: transparent; 
+    color: #FFFFFF; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.custom-form-button .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: #5D715A !important; 
+    border-color: #515F4F !important; 
+    color: #FFFFFF !important; 
+    border-width: 5px !important; 
+}

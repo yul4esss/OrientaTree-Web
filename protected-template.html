@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Prompt</title>
+    <link rel="stylesheet" href="css/protected-template.css" />
+  </head>
+  <body>
+    <!-- Password Prompt Modal -->
+    <div id="passwordModal" class="password-modal">
+      <div class="password-modal-content">
+        <h2>Protected template</h2>
+        <p>Enter your password to get access to this activity</p>
+        <input type="password" id="passwordInput" placeholder="Password" />
+        <div class="button-container">
+          <button onclick="closePasswordPrompt()">Cancel</button>
+          <button onclick="checkPassword()">Ok</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/protected-template.js"></script>
+  </body>
+</html>

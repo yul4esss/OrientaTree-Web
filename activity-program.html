@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity Program</title>
+    <link rel="stylesheet" href="css/activity-of-the-course.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <button onclick="goBackToCourse()">&#8592;</button>
+        <h1>Activity Program</h1>
+      </div>
+      <div class="content">
+        <div class="frame">
+          <input
+            type="text"
+            placeholder="Enter the name of the activity"
+            class="activity-name"
+            id="activity-name"
+          />
+          <button class="set-map-points" id="set-map-points">
+            Set the map points
+          </button>
+          <div class="activity-program">
+            <label>Date and Time</label>
+            <div class="date-time">
+              <input type="date" id="activity-date" class="date" />
+              <input type="time" id="activity-start" class="start" />
+              <input type="time" id="activity-end" class="end" />
+            </div>
+          </div>
+
+          <div class="modality">
+            <label>Modality</label>
+            <div>
+              <input
+                type="radio"
+                id="classical"
+                name="modality"
+                value="classical"
+              />
+              <label for="classical">Classical orientation</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="score"
+                name="modality"
+                value="score"
+                checked
+              />
+              <label for="score">Score</label>
+            </div>
+          </div>
+          <div class="help-location">
+            <label>Help with location</label>
+            <div class="toggle">
+              <input type="checkbox" id="help-location-toggle" />
+              <label for="help-location-toggle"
+                >You can request help with the location</label
+              >
+            </div>
+          </div>
+          <div class="password-info" id="password-info">
+            <div class="password-container">
+              <input
+                type="password"
+                placeholder="Enter the password"
+                class="activity-name"
+                id="password-input"
+              />
+              <button class="toggle-password" id="toggle-password">Show</button>
+            </div>
+            <button class="password-button" id="set-password">
+              Set Password
+            </button>
+          </div>
+          <button class="program-button" id="program-button">Program</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/program-activity.js"></script>
+  </body>
+</html>
